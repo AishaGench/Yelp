@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
-import BusinessList from "../BusinessList/BusinessList";
-import SearchBar from "../SearchBar/SearchBar";
+import BusinessList from '../BusinessList/BusinessList';
+import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
   return (
