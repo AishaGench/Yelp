@@ -23,34 +23,34 @@ export default class SearchBar extends Component {
                     return <li key={sortByOptionValue}>{sortByOption}</li>
             })
         }
-    getSortByClass(sortByOption){
+    getSortByClass = (sortByOption)=>{
         if(this.state.sortBy === sortByOption){
             return 'active'
         }else{
             return ''
         }
     }
-    handleSortByChange(sortByOption){
+    handleSortByChange=(sortByOption)=>{
         this.setState({
             sortBy: sortByOption
  
         })
  
     }
-    handleTermChange(e){
+    handleTermChange = (e) =>{
         this.setState({
-            term: e.target.value
+           term: e.target.value
         })
  
     }
 
-    handleLocationChange(e){
+    handleLocationChange=(e)=>{
         this.setState({
             location: e.target.value
         })
     }
 
-    handleSearch(event){
+    handleSearch=(event)=>{
         this.props.searchYelp(this.state.term,this.state.location,this.state.sortBy)
         event.preventDefault()
 

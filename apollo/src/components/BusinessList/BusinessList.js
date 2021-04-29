@@ -8,7 +8,7 @@ export default class BusinessList extends Component {
             <div className='BusinessList'>
                 {this.props.businesses.map((business)=>{
                     return (
-                    <Business business ={business}/>
+                    <Business key={business.id} business ={business}/>
                     )
                 })}
               
